@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/react": "^16.4.7",
     "@types/react-dom": "^16.0.6",
-    "oreore-gl-library": "git+https://github.com/ryou/oreore-gl-library.git",
+    "oreore-gl-library": "github:ryou/oreore-gl-library",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },

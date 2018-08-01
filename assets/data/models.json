@@ -1,0 +1,26 @@
+[
+    {
+        "id": "cube",
+        "path": "../assets/models/cube.obj"
+    },
+    {
+        "id": "sphere",
+        "path": "../assets/models/sphere.obj"
+    },
+    {
+        "id": "smoothsphere",
+        "path": "../assets/models/smoothsphere.obj"
+    },
+    {
+        "id": "torus",
+        "path": "../assets/models/torus.obj"
+    },
+    {
+        "id": "smoothtorus",
+        "path": "../assets/models/smoothtorus.obj"
+    },
+    {
+        "id": "skybox",
+        "path": "../assets/models/skybox.obj"
+    }
+]

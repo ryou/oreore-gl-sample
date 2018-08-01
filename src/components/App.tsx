@@ -45,10 +45,10 @@ export class App extends React.Component<AppProps, AppStates> {
         canvas.height = 1000;
         document.body.appendChild(canvas);
         
-        const loadShaderData = fetch('./data/shader.json');
-        const loadTextureData = fetch('./data/textures.json');
-        const loadModelData = fetch('./data/models.json');
-        const loadMaterialData = fetch('./data/materials.json');
+        const loadShaderData = fetch('../assets/data/shader.json');
+        const loadTextureData = fetch('../assets/data/textures.json');
+        const loadModelData = fetch('../assets/data/models.json');
+        const loadMaterialData = fetch('../assets/data/materials.json');
         
         Promise.all([loadShaderData, loadTextureData, loadModelData, loadMaterialData])
             .then((response) => Promise.all([response[0].text(), response[1].text(), response[2].text(), response[3].text()]))

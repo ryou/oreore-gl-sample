@@ -1,12 +1,8 @@
-module.exports = {
+const config = {
     entry: "./src/index.tsx",
     output: {
         filename: "bundle.js",
-        path: __dirname + "/dist"
     },
-
-    // Enable sourcemaps for debugging webpack's output.
-    devtool: "source-map",
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
@@ -31,4 +27,20 @@ module.exports = {
     //     "react": "React",
     //     "react-dom": "ReactDOM"
     // }
+};
+
+module.exports = (env, argv) => {
+
+    if (argv.mode === 'development') {
+        config.output.path = `${__dirname}/development/build`;
+
+        // Enable sourcemaps for debugging webpack's output.
+        config.devtool= "source-map"
+    }
+
+    if (argv.mode === 'production') {
+        config.output.path = `${__dirname}/production/build`;
+    }
+
+    return config;
 };
