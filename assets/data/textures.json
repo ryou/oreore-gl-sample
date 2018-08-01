@@ -103,5 +103,10 @@
         "id": "Cubemap/Cloud",
         "type": "cubemap",
         "path": "../assets/images/cubemap/cloud"
+    },
+    {
+        "id": "Cubemap/UnionSquare",
+        "type": "cubemap",
+        "path": "../assets/images/cubemap/union_square"
     }
 ]

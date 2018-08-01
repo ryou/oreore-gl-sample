@@ -185,7 +185,7 @@ export class App extends React.Component<AppProps, AppStates> {
                             <td>
                                 <Select
                                     value={this.state.skybox}
-                                    items={['Yokohama', 'Chapel', 'Cloud']}
+                                    items={['Yokohama', 'Chapel', 'UnionSquare', 'Cloud']}
                                     onChange={(value) => { this.setSkybox(value) }}
                                 />
                             </td>
