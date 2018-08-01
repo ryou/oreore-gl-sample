@@ -30,6 +30,39 @@ td {
 
 }
 
-.-hidden {
-    display: none;
+.Loading {
+    position: absolute;
+    z-index: 10;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+
+    transition: opacity 1s;
+}
+.Loading.-hidden {
+    opacity: 0;
+
+    pointer-events: none;
+}
+.Loading i {
+    font-size: 50px;
+
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

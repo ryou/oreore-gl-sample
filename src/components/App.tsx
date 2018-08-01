@@ -91,6 +91,8 @@ export class App extends React.Component<AppProps, AppStates> {
 
                         oreore.play();
                         this.setState({isReady: true});
+                        const loading = document.querySelector('.Loading');
+                        loading.classList.add('-hidden');
                     },
                 );
             });
@@ -139,9 +141,7 @@ export class App extends React.Component<AppProps, AppStates> {
 
     render() {
         return (
-            <div
-                className={ (this.state.isReady) ? '' : '-hidden' }
-            >
+            <div>
                 <table>
                     <tbody>
                         <tr>
